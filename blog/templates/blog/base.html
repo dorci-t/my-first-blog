@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
@@ -13,6 +15,12 @@
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
             <h1><a href="/">Dorci's Blog</a></h1>
+        </div>
+        <div class="top-nav">
+            <a class="active" href="{% url 'post_list' %}">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Me</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dorottya-t%C3%A9nyi-076a99151/">LinkedIn</a>
         </div>
         <div class="content container">
             <div class="row">
