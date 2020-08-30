@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #41b3a3;
+    background-color: #d8c3a5;
     margin-top: 0;
     margin-bottom: 0;
     padding: 20px 20px 20px 40px;
@@ -9,7 +9,7 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: #e85a4f;
     font-size: 40pt;
     text-decoration: none;
     font-family: 'Sacramento', cursive;
@@ -17,14 +17,14 @@
 }
 
 body {
-    background-color: #cfa3b1;
+    background-color: #eae7dc;
 }
 
 /* Add a black background color to the top navigation */
 .top-nav {
     margin-top: 0;
     margin-bottom: 30;
-    background-color: #dbbac4;
+    background-color: #e98074;
     overflow: hidden;
     font-family: 'Playfair Display', serif;
     position: relative;
@@ -49,14 +49,14 @@ body {
   
   /* Change the color of links on hover */
 .top-nav a:hover {
-    background-color: #e7d1d8;
-    color: #271c1f;
+    background-color: #ed998f;
+    color: #71706e;
 }
   
   /* Add a color to the active/current link */
 .top-nav a.active {
-    background-color: #e8a87c;
-    color: white;
+    background-color: #e85a4f;
+    color: #eae7dc;
 }
 
 .content {
@@ -68,7 +68,7 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    color: #b3e0da;
+    color: #d8c3a5;
 }
 
 .save {
@@ -88,10 +88,10 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
-    color: #d9efec;
+    color: #71706e;
     text-align: left;
 }
 
 .post h2 a, .post h2 a:visited {
-    color: #348f82;
+    color: #e85a4f;
 }
