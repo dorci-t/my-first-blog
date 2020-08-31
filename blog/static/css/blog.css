@@ -26,9 +26,11 @@ body {
     margin-bottom: 30;
     background-color: #e98074;
     overflow: hidden;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    text-align:center;
+   /* position: relative;*/
+    text-align: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
   
   /* Style the links inside the navigation bar */
@@ -39,6 +41,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     display:inline-block;
+    font-family: 'Playfair Display', serif;
    /* float: none;
     position: absolute;
     right: 50%;
@@ -59,8 +62,15 @@ body {
     color: #eae7dc;
 }
 
+.col-md-8 {
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    color: #71706e;
+    margin-left: 0;
+}
+
 .content {
-    margin-left: 40px;
+   /* margin-left: 40px;*/
 }
 
 h1, h2, h3, h4 {
@@ -69,6 +79,7 @@ h1, h2, h3, h4 {
 
 .date {
     color: #d8c3a5;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .save {
@@ -89,9 +100,12 @@ h1, h2, h3, h4 {
 .post {
     margin-bottom: 70px;
     color: #71706e;
-    text-align: left;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+  /*  font-size: 26pt;*/
 }
 
 .post h2 a, .post h2 a:visited {
     color: #e85a4f;
+    font-family: 'Playfair Display', serif;
 }

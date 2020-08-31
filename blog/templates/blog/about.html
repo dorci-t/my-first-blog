@@ -19,8 +19,8 @@
             <h1><a href="/">Dorci's Blog</a></h1>
         </div>
         <div class="top-nav">
-            <a class="active" href="{% url 'post_list' %}">Blog</a>
-            <a href="{% url 'about' %}">About Me</a>
+            <a href="{% url 'post_list' %}">Blog</a>
+            <a class="active" href="{% url 'about' %}">About Me</a>
             <a href="{% url 'contact' %}">Contact</a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dorottya-t%C3%A9nyi-076a99151/">LinkedIn</a>
         </div>
@@ -29,8 +29,7 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
+                    <p>This is the About Me page.</p>
                 </div>
                 <div class="col-md-2"></div>
             </div>
