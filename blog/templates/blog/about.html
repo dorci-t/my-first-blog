@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Dorci's blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -12,27 +13,29 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            {% endif %}
-            <h1><a href="/">Dorci's Blog</a></h1>
-        </div>
-        <div class="top-nav">
-            <a href="{% url 'post_list' %}">Blog</a>
-            <a class="active" href="{% url 'about' %}">About Me</a>
-            <a href="{% url 'contact' %}">Contact</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dorottya-t%C3%A9nyi-076a99151/">LinkedIn</a>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-8">
-                    <p>This is the About Me page.</p>
-                </div>
-                <div class="col-md-2"></div>
+            <div class="page-header">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                {% endif %}
+                <h1><a href="/">Dorci's Blog</a></h1>
             </div>
-        </div>
+            <div class="top-nav">
+                <a href="{% url 'post_list' %}">Blog</a>
+                <a class="active" href="{% url 'about' %}">About Me</a>
+                <a href="{% url 'contact' %}">Contact</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dorottya-t%C3%A9nyi-076a99151/">LinkedIn</a>
+            </div>
+            <div class="content container">
+                        <p>Hello and welcome to my blog! My name is Dorottya Tényi, but I prefer to use Dorci :) I'm from the beautiful Budapest, Hungary.
+                            I just finished my first year of Artificial Intelligence and Computer Science BSc at the University of Birmingham, where I'm a student ambassador for computer science and the vice chair of Women in Science and Engineering.
+                            Building this personal webpage was my summer coursework and I really enjoyed it.
+                            In my free time, I like to travel, read about skincare and experiment with new products, hang out with friends and watch indie movies.
+                            Hope you like my blog!
+                        </p>
+                        <img src="{% static 'profpic.jpg' %}" alt="Profile picture" style="width:200px" class="pic">
+            </div>
+            <div class="footer">
+                <p>Dorottya Tenyi</p>
+              </div>
     </body>
 </html>
